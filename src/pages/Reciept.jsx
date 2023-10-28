@@ -19,7 +19,7 @@ function Reciept() {
     date: "08-09-2023 at 23:20:05",
   };
   return (
-    <div>
+    <div className=" sm:w-1/2 mx-auto">
       <section className=" mt-5 flex">
         <h2 className="text-black text-center text-sm font-semibold self-stretch dark:text-white">
           My Receipts
