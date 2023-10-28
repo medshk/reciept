@@ -58,7 +58,9 @@ function App() {
       console.log("here");
       setFilteredResult(data);
     } else {
-      const filteredArray = data.filter((item) => item.title.includes(search));
+      const filteredArray = data.filter((item) =>
+        item.title.toLowerCase().includes(search.toLowerCase())
+      );
       setFilteredResult(filteredArray);
     }
   }, [search, data]);
